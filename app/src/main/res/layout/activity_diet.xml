@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8F5"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- BACK BUTTON -->
+
+        <Button
+            android:id="@+id/txtDietBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←  Diet Plan"
+            android:textColor="#145A24"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="8dp" />
+
+        <!-- TITLE -->
+
+        <TextView
+            android:id="@+id/txtDietTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Your Diet Plan"
+            android:textColor="#145A24"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="A simple and balanced daily meal plan"
+            android:textColor="#555555"
+            android:textSize="15sp" />
+
+        <!-- BREAKFAST -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BREAKFAST"
+                android:textColor="#388E3C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Start Your Day"
+                android:textColor="#145A24"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBreakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="• Eggs or paneer&#10;• Whole-grain bread or oats&#10;• One serving of fruit&#10;• Water or milk"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+        </LinearLayout>
+
+        <!-- LUNCH -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LUNCH"
+                android:textColor="#388E3C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Balanced Lunch"
+                android:textColor="#145A24"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="• Rice or chapati&#10;• Dal or another protein source&#10;• Vegetables&#10;• Salad or curd"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+        </LinearLayout>
+
+        <!-- EVENING SNACK -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EVENING SNACK"
+                android:textColor="#388E3C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Healthy Snack"
+                android:textColor="#145A24"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSnack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="• Fruit&#10;• Nuts or seeds&#10;• Yogurt or milk&#10;• Plenty of water"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+        </LinearLayout>
+
+        <!-- DINNER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DINNER"
+                android:textColor="#388E3C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Light Dinner"
+                android:textColor="#145A24"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="• Chapati or rice&#10;• Dal, paneer, eggs, or another protein source&#10;• Cooked vegetables&#10;• Salad"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+        </LinearLayout>
+
+        <!-- REMINDER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Remember to stay hydrated and choose a variety of nutritious foods."
+            android:textColor="#777777"
+            android:textSize="13sp"
+            android:gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

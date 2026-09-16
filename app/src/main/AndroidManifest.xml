@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Diet Planner System"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DietPlannerSystem">
+
+
+        <!-- MAIN / GET STARTED -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- LOGIN -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+
+        <!-- USER DETAILS / CREATE ACCOUNT -->
+
+        <activity
+            android:name=".UserDetailsActivity"
+            android:exported="false" />
+
+
+        <!-- FITNESS GOAL -->
+
+        <activity
+            android:name=".FitnessGoalActivity"
+            android:exported="false" />
+
+
+        <!-- FITNESS SUMMARY -->
+
+        <activity
+            android:name=".FitnessSummaryActivity"
+            android:exported="false" />
+
+
+        <!-- DASHBOARD -->
+
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+
+        <!-- WORKOUT TYPE -->
+
+        <activity
+            android:name=".WorkoutTypeActivity"
+            android:exported="false" />
+
+
+        <!-- GYM WORKOUT -->
+
+        <activity
+            android:name=".GymWorkoutActivity"
+            android:exported="false" />
+
+
+        <!-- HOME WORKOUT -->
+
+        <activity
+            android:name=".HomeWorkoutActivity"
+            android:exported="false" />
+
+
+        <!-- DIET -->
+
+        <activity
+            android:name=".DietActivity"
+            android:exported="false" />
+
+
+        <!-- WATER INTAKE -->
+
+        <activity
+            android:name=".WaterIntakeActivity"
+            android:exported="false" />
+
+
+        <!-- OLD STEPS ACTIVITY -->
+        <!-- Kept temporarily so nothing breaks -->
+
+        <activity
+            android:name=".StepsActivity"
+            android:exported="false" />
+
+
+        <!-- PROGRESS TRACKING -->
+
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

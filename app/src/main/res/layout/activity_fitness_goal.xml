@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8F5"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="28dp"
+        android:paddingBottom="30dp">
+
+        <!-- PAGE TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Goal"
+            android:textColor="#145A24"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Select your primary fitness goal"
+            android:textColor="#555555"
+            android:textSize="15sp" />
+
+        <!-- LOSE WEIGHT -->
+
+        <LinearLayout
+            android:id="@+id/cardLoseWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOSE WEIGHT"
+                android:textColor="#145A24"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="7dp"
+                android:background="#1B5E20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Reduce body fat and improve fitness"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="SELECT GOAL   →"
+                android:textColor="#1B5E20"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- MAINTAIN WEIGHT -->
+
+        <LinearLayout
+            android:id="@+id/cardMaintainWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAINTAIN WEIGHT"
+                android:textColor="#145A24"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="7dp"
+                android:background="#1B5E20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Stay consistent with your current weight"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="SELECT GOAL   →"
+                android:textColor="#1B5E20"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- GAIN WEIGHT -->
+
+        <LinearLayout
+            android:id="@+id/cardGainWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GAIN WEIGHT"
+                android:textColor="#145A24"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="7dp"
+                android:background="#1B5E20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Build healthy mass and strength"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="SELECT GOAL   →"
+                android:textColor="#1B5E20"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- CONTINUE -->
+
+        <Button
+            android:id="@+id/btnGoalContinue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="22dp"
+            android:text="View Fitness Summary   →"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#1B5E20"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

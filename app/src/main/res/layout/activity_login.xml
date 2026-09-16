@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8F5"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Welcome Back"
+            android:textColor="#145A24"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Login to continue to your fitness plan"
+            android:textColor="#555555"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+
+        <!-- Login ID -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login ID"
+            android:textColor="#145A24"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etLoginId"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:hint="Enter your Login ID"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#222222"
+            android:textColorHint="#888888"
+            android:textSize="15sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+
+        <!-- Password -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#145A24"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#222222"
+            android:textColorHint="#888888"
+            android:textSize="15sp" />
+
+
+        <!-- Error -->
+
+        <TextView
+            android:id="@+id/txtError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textColor="#C62828"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <!-- Login -->
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#388E3C"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Don't have an account?"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+        <!-- Create Account -->
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#E8F5E9"
+            android:text="Create New Account"
+            android:textAllCaps="false"
+            android:textColor="#145A24"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

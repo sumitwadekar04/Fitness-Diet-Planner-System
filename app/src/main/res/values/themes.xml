@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Theme.DietPlannerSystem"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor">#F5F8F5</item>
+        <item name="android:navigationBarColor">#F5F8F5</item>
+        <item name="colorAccent">#1B5E20</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8F5"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- BACK -->
+
+        <TextView
+            android:id="@+id/txtGymWorkoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="←  Workout Plan"
+            android:textColor="#145A24"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:text="Weekly Gym Workout"
+            android:textColor="#145A24"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Complete your workouts and track your progress"
+            android:textColor="#555555"
+            android:textSize="14sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <!-- ================= MONDAY ================= -->
+
+        <LinearLayout
+            android:id="@+id/mondayCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MONDAY"
+                android:textColor="#388E3C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Chest &amp; Triceps"
+                android:textColor="#145A24"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Bench Press — 3 × 10&#10;• Incline Dumbbell Press — 3 × 10&#10;• Chest Fly — 3 × 12&#10;• Tricep Pushdown — 3 × 12&#10;• Overhead Tricep Extension — 3 × 10"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtMondayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#087F23"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnMondayComplete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#388E3C"
+                android:text="Mark Workout Completed"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <!-- ================= TUESDAY ================= -->
+
+        <LinearLayout
+            android:id="@+id/tuesdayCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TUESDAY"
+                android:textColor="#388E3C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Back &amp; Biceps"
+                android:textColor="#145A24"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Lat Pulldown — 3 × 10&#10;• Seated Cable Row — 3 × 10&#10;• Dumbbell Row — 3 × 10 each side&#10;• Dumbbell Bicep Curl — 3 × 12&#10;• Hammer Curl — 3 × 12"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTuesdayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#087F23"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnTuesdayComplete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#388E3C"
+                android:text="Mark Workout Completed"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <!-- ================= WEDNESDAY ================= -->
+
+        <LinearLayout
+            android:id="@+id/wednesdayCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WEDNESDAY"
+                android:textColor="#388E3C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Legs"
+                android:textColor="#145A24"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Barbell Squats — 3 × 10&#10;• Leg Press — 3 × 12&#10;• Romanian Deadlift — 3 × 10&#10;• Leg Extension — 3 × 12&#10;• Calf Raises — 3 × 15"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtWednesdayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#087F23"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnWednesdayComplete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#388E3C"
+                android:text="Mark Workout Completed"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <!-- ================= THURSDAY ================= -->
+
+        <LinearLayout
+            android:id="@+id/thursdayCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="THURSDAY"
+                android:textColor="#388E3C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Shoulders"
+                android:textColor="#145A24"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Shoulder Press — 3 × 10&#10;• Lateral Raises — 3 × 12&#10;• Front Raises — 3 × 12&#10;• Rear Delt Fly — 3 × 12&#10;• Shrugs — 3 × 12"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtThursdayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#087F23"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnThursdayComplete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#388E3C"
+                android:text="Mark Workout Completed"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <!-- ================= FRIDAY ================= -->
+
+        <LinearLayout
+            android:id="@+id/fridayCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FRIDAY"
+                android:textColor="#388E3C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Chest &amp; Arms"
+                android:textColor="#145A24"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Dumbbell Bench Press — 3 × 10&#10;• Incline Dumbbell Fly — 3 × 12&#10;• Cable Crossover — 3 × 12&#10;• EZ Bar Curl — 3 × 10&#10;• Tricep Pushdown — 3 × 12"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtFridayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#087F23"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnFridayComplete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#388E3C"
+                android:text="Mark Workout Completed"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <!-- ================= SATURDAY ================= -->
+
+        <LinearLayout
+            android:id="@+id/saturdayCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SATURDAY"
+                android:textColor="#388E3C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Full Body"
+                android:textColor="#145A24"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Deadlift — 3 × 8&#10;• Dumbbell Squats — 3 × 10&#10;• Dumbbell Press — 3 × 10&#10;• Lat Pulldown — 3 × 10&#10;• Plank — 3 × 30 sec"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtSaturdayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#087F23"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSaturdayComplete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#388E3C"
+                android:text="Mark Workout Completed"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <!-- ================= SUNDAY ================= -->
+
+        <LinearLayout
+            android:id="@+id/sundayCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUNDAY"
+                android:textColor="#388E3C"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rest &amp; Recovery"
+                android:textColor="#145A24"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Rest Day&#10;• Light Walking if comfortable&#10;• Gentle Stretching&#10;• Recovery&#10;• Hydration"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtSundayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#087F23"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSundayComplete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#388E3C"
+                android:text="Mark Workout Completed"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>
